@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset='utf-8'>
+  </head>
+  
+  <body>
+    <script>
+      //1.
+      var a = 1, b = 1, c, d;
+      c = ++a; alert(c);           // 2  сначала a=2 потом c=2
+      d = b++; alert(d);           // 1  сначала d=b=1 потом b=2
+      c = (2+ ++a); alert(c);      // 5  сначала a=3 потом c=2+3=5
+      d = (2+ b++); alert(d);      // 4  сначала 2+2=4 потом b=3
+      alert(a);                    // 3  
+      alert(b);                    // 3  в итоге a=3 и b=3
+      alert('all')
+
+
+      //2. Чему будет равен x в примере ниже?
+      var a = 2;
+      var x = 1 + (a *= 2);  // сначала идет a*=2  a=4, затем 1+a=1+4=5
+      //x = 5
+
+    </script>
+  </body>
+</html>
